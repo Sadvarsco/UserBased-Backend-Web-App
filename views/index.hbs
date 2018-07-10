@@ -1,0 +1,27 @@
+{{!-- Main Index page. Uses bootstrap formatting. Post all post stored in database in a table --}}
+{{> header}}
+<p class="logged">{{#if isAuthenticated}} Logged in as ID: {{passUserID}}{{/if}}</p>
+<div class="sectioninner">
+    <ul class="list">
+        {{#each postitems}}
+        <li class="list_items">
+            <div style="min-width: 220px" class="container p-2 bd-highlight">
+                <a href="http://localhost:8080/post/{{ID}}">
+                <table class="table table-hover setpost border bd-highlight">
+                    <tr>
+                        <td>
+                            <b>ID:</b> {{ID}}</td>
+                        <td>
+                            <b>User:</b> {{User.Username}}</td>
+                        <td class="post right time">{{Timestamp}}</td>
+                    </tr>
+                </table>
+                </a>
+                <div class="color: red"><ul>{{Message}}</ul></div>
+
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+{{> footer}}

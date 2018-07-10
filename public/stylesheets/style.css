@@ -1,0 +1,81 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url('http://www.publicdomainpictures.net/pictures/50000/velka/flower-meadow.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+li {
+  margin: 5px;
+}
+
+tr {
+  width: 100%;
+  margin: 5px;
+}
+
+.table {
+  width: 40%;
+}
+
+.righttime {
+  text-align: right;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+.bpost{
+  background: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.list_items {
+  width: calc(30% - 2rem);
+  margin: 2rem;
+  background: #fff;
+  padding: 0.1rem;
+  list-style: none;
+  position: relative;
+  
+}
+.logged{
+  text-align: right;
+  text-decoration-color: #00B7FF;
+  font-weight: bolder;
+  color: #00B7FF;
+}
+.sectioninner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

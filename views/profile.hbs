@@ -1,0 +1,26 @@
+{{> header}}
+<div class="sectioninner">
+    <h1>USERNAME: {{output.Username}}</h1>
+    <P>Fullname:, {{output.LastName}}, {{output.FirstName}}</p>
+    <p>User ID: {{output.ID}}</p>
+    <ul class="list">
+        {{#each postitems}}
+        <li class="list_items">
+            <div style="min-width: 220px" class="container p-2 bd-highlight">
+                <table class="table table-hover setpost border bd-highlight">
+                    <tr>
+                        <td>
+                            <b>ID:</b> {{ID}}</td>
+                        <td>
+                            <b>User:</b> {{User.Username}}</td>
+                        <td class="post righttime">{{Timestamp}}</td>
+                    </tr>
+                </table>
+                <ul>{{Message}}</ul>
+
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+{{> footer}}

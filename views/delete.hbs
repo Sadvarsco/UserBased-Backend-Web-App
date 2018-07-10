@@ -1,0 +1,28 @@
+ {{!-- Delete Page, Page pulls up the post that matches with the ID, if no matching Id is found, then page is blank Uses bootstrap
+formatting. Not using main header so needs to be added in --}}
+<!doctype html>
+<html class="no-js" lang="english">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+</html>
+{{> navbar}}
+<p class="logged">{{#if isAuthenticated}} Logged in as ID: {{passUserID}}{{/if}}</p>
+<div style="max-width: 60%; position: center; left: 25%; align: center; padding: 5%; margin-top: 2rem" class="card col-sm-8 text-left bpost">
+    <h1>Post: {{output.ID}}</h1>
+    <h5>{{output.Timestamp}}</h5>
+    <div>{{output.Message}}</div>
+    <hr>
+    <h3>Author: {{output.User.Username}}</h3>
+    <form action="{{output.ID}}" method="POST" id="usrform">
+        <div>
+            <input type="submit" value="CONFIRM DELETE">
+        </div>
+    </form>
+</div>

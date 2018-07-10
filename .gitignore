@@ -1,0 +1,11 @@
+platforms/*
+plugins/*
+node_modules/*
+.vscode/*
+.sourcemaps/*
+*.swp
+*.swo
+*.log
+*.DS_Store
+*.tmp
+*.sass-cache
